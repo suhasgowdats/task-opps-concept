@@ -1,0 +1,25 @@
+class person {
+    constructor(name){
+        this.name = name
+    }
+      greetings(){
+          return `welcome to method greeting`
+      }
+      getfood(){
+          return `i would like to eat pizza`
+      }
+      static displaywalk(){
+          return `i am static with ${this.name} dispaly walk`
+      }
+      getname(){
+          return `i am ${this.name}`
+      } 
+}
+let person1 = new person("Suhas Gowda")
+console.log(person1.getname())
+console.log(person1.greetings())
+console.log(person1.getfood())
+console.log(person.displaywalk())
+
+let food = new person("omkar")
+console.log(food.getfood())
